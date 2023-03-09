@@ -1,0 +1,29 @@
+@media (max-width: 620px) {
+
+    .nav-row {
+        justify-content: space-between;
+    }
+
+    .dark-mode-btn {
+        order: 0;
+    }
+
+    .header-title {
+        font-size: 30px;
+    }
+
+    .header-title strong {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 550px) {
+
+    .title-1 {
+        font-size: 50px;
+    }
+
+    .title-2 {
+        font-size: 30px;
+    }
+}
