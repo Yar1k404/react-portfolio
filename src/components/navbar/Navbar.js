@@ -16,7 +16,7 @@ function Navbar() {
             <nav className="nav">
                 <div className="container">
                     <div className="nav-row">
-                        <NavLink to='/' className='logo'>
+                        <NavLink to='/react-portfolio' className='logo'>
                             <strong>My</strong> portfolio
                         </NavLink>
 
@@ -24,7 +24,7 @@ function Navbar() {
 
                         <ul className="nav-list">
                             <li className="nav-item">
-                                <NavLink to='/' onClick={scrollTo} className={({isActive}) => isActive ? activeLink : normalLink}>
+                                <NavLink to='/react-portfolio' onClick={scrollTo} className={({isActive}) => isActive ? activeLink : normalLink}>
                                     Projects
                                 </NavLink>
                             </li>
