@@ -5,7 +5,12 @@ import project4 from "../../img/projects/04.jpg";
 import project5 from "../../img/projects/05.jpg";
 import project6 from "../../img/projects/06.jpg";
 
-const projects = [
+interface ProjectList {
+    title: string,
+    img: any
+}
+
+export const projects: ProjectList[] = [
     {
         title: 'Gaming streaming portal',
         img: project1,
@@ -31,5 +36,3 @@ const projects = [
         img: project6,
     },
 ]
-
-export {projects}
