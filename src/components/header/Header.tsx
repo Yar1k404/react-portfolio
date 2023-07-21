@@ -1,3 +1,4 @@
+import React from "react";
 import './Header.css'
 import BtnDownload from "../btnDownload/BtnDownload";
 
@@ -12,7 +13,7 @@ function Header() {
                         <div className="header-text">
                             <p>with passion for learning and creating.</p>
                         </div>
-                        <BtnDownload link='https://github.com/Yar1k404'/>
+                        <BtnDownload link='https://github.com/Yar1k404' />
                     </h1>
                 </div>
             </header>

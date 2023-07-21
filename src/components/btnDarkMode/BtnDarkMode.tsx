@@ -1,3 +1,4 @@
+import React from "react";
 import {useEffect, useRef} from "react";
 import {useLocalStorage} from "../utils/useLocalStorage";
 import sun from "./sun.svg";
@@ -8,7 +9,7 @@ function BtnDarkMode() {
 
     const [darkMode, setDarkMode] = useLocalStorage('darkMode', 'light')
 
-    const btnRef = useRef(null)
+    const btnRef = useRef<HTMLButtonElement>(null)
 
     useEffect(() => {
         if (darkMode === 'dark') {
@@ -20,7 +21,7 @@ function BtnDarkMode() {
         }
     }, [darkMode])
 
-    const toggleDarkMode = () => {
+    const toggleDarkMode = (): void => {
         setDarkMode((currentValue) => {
             return currentValue === 'light' ? 'dark' : 'light'
         })

@@ -1,16 +1,16 @@
+import React from "react";
 import './Navbar.css'
-import {NavLink}  from 'react-router-dom'
+import { NavLink }  from 'react-router-dom'
 import BtnDarkMode from "../btnDarkMode/BtnDarkMode";
 
+const activeLink: string = 'nav-link nav-link-active'
+const normalLink: string = 'nav-link'
+
+const scrollTo = (): void => {
+    window.scrollTo(0, 840)
+}
+
 function Navbar() {
-
-    const activeLink = 'nav-link nav-link-active'
-    const normalLink = 'nav-link'
-
-    const scrollTo = () => {
-      window.scrollTo(0, 840)
-    }
-
     return (
         <div>
             <nav className="nav">

@@ -1,6 +1,11 @@
+import React from "react";
 import './BtnDownload.css'
 
-function BtnDownload({link}) {
+interface BtnDownloadProps  {
+    link: string
+}
+
+function BtnDownload({link}: BtnDownloadProps) {
     return (
         <div>
             <a href={link} className="btn" target='_blank'>My GitHub</a>

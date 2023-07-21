@@ -1,3 +1,4 @@
+import React from "react";
 import Header from "../components/header/Header";
 import Project from "../components/project/Project"
 import {projects} from "../components/utils/ProjectList";
